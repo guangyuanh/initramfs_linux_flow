@@ -33,7 +33,7 @@ $(linux):
 	curl -L https://cdn.kernel.org/pub/linux/kernel/v4.x/$(linux).tar.xz | tar -xJ
 	cd $(linux); \
 	git init; \
-	git remote add -t $(RISCV-LINUX-BRANCH) origin https://github.com/donggyukim/riscv-linux.git; \
+	git remote add -t $(RISCV-LINUX-BRANCH) origin https://github.com/guangyuanh/riscv-linux.git; \
 	git fetch --all; git checkout -f $(RISCV-LINUX-SHA)
 
 $(linux)/.config: linux_config $(linux)
